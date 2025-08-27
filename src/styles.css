@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+header {
+  background-color: #D6EAF8; /* ✅ Match background with logo */
+  display: flex; /* ✅ Align logo & text horizontally */
+  align-items: center;
+  padding: 12px;
+}
+
+.logo {
+  height: 50px; /* ✅ Adjust logo size */
+  margin-right: 15px; /* ✅ Space between handshake image & text */
+}
+
+footer {
+  background-color: #E0E0E0; /* ✅ Soft Cool Gray */
+  color: #333;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #4A69BD;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif; /* ✅ Modern & clean typography */
+  color: #00796B; /* ✅ Gold for a premium look */
+  font-size: 24px; /* ✅ Standard size for better readability */
+  font-weight: bold;
+  letter-spacing: 1px; /* ✅ Subtle spacing for elegance */
+}
+
+h2 {
+  font-size: 20px; /* ✅ Slightly smaller for hierarchy */
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif; /* ✅ Modern and elegant font */
+  color: #4169E1; /* ✅ Gold for a premium feel */
+  font-size: 26px; /* ✅ Slightly larger for emphasis */
+  font-weight: bold;
+  letter-spacing: 1px; /* ✅ Subtle spacing for readability */
+}
+
+h4 {
+    text-align: center;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+

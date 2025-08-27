@@ -1,1 +1,8 @@
-Hello And welcome to my first Angular project
+<header *ngIf="showHeader">
+  <img src="assets/logo.png" alt="Shree Garments Logo" class="logo"> <!-- ✅ Add logo -->
+  <h1>Shree Garments</h1>
+</header>
+<router-outlet></router-outlet> <!-- ✅ Loads routed components -->
+<footer>
+  <p>&copy; 2025 Shree Garments. All rights reserved.</p>
+</footer>

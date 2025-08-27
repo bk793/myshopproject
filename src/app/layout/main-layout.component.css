@@ -1,0 +1,82 @@
+body {
+  background-color: #F0F8FF; /* ✅ Light Mist Blue */
+  color: #2C3E50; /* ✅ Dark Slate for readability */
+}
+
+form {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+
+.layout-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar {
+  background-color: #F0F0F5; /* ✅ Soft Cool Gray */
+  color: #2C3E50; /* ✅ Deep Slate for menu text */
+  width: 250px;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.sidebar ul li a {
+  color: #00796B; /* ✅ Dark Teal for a modern, elegant look */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #4A69BD; /* ✅ Slight navy blue on hover */
+  text-decoration: underline;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row; /* ✅ Ensures sidebar and content align horizontally */
+  height: 100vh; /* Full viewport height */
+}
+
+.content {
+  flex-grow: 1; /* ✅ Expands to fill remaining space */
+  padding: 40px;
+  overflow-y: auto; /* ✅ Enables scrolling if content overflows */
+}

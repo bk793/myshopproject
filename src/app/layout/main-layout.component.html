@@ -1,0 +1,20 @@
+
+
+<div class="container">
+  <nav class="sidebar" *ngIf="!isLoginPage()"> <!-- ✅ Hide menu on login -->
+    <ul>
+      <li><a routerLink="/welcome">Welcome</a></li>
+      <li><a routerLink="/add-product">Add Product</a></li>
+      <li><a routerLink="/view-product">View Product</a></li>
+      <li><a routerLink="/order">Order</a></li>
+      <li><a routerLink="/order-summary">Order Summary</a></li>
+      <li><a routerLink="/order-status">Order Status</a></li>
+      <li><a (click)="logout()">Logout</a></li> <!-- ✅ Logout option -->
+    </ul>
+  </nav>
+
+  <main class="content">
+    <router-outlet></router-outlet> <!-- ✅ Loads only child pages -->
+  </main>
+</div>
+

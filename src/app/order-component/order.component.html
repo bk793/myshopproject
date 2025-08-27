@@ -1,0 +1,10 @@
+<h2>Place an Order</h2>
+<form (submit)="placeOrder()">
+  <label>Product Name:</label>
+  <input type="text" [(ngModel)]="order.product" required />
+
+  <label>Quantity:</label>
+  <input type="number" [(ngModel)]="order.quantity" required />
+
+  <button type="submit">Submit Order</button>
+</form>

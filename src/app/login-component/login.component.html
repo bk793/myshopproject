@@ -1,0 +1,19 @@
+
+
+<main>
+  
+    <p *ngIf="errorMessage" class="error" style="text-align: center;">{{ errorMessage }}</p>
+  <form (ngSubmit)="login()" #loginForm="ngForm">
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" [(ngModel)]="user.userId" name="userId" required #userId="ngModel">
+    <div *ngIf="userId.invalid && userId.touched" class="error">User ID is required</div>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="user.password" name="password" required minlength="6" #password="ngModel">
+    <div *ngIf="password.invalid && password.touched" class="error">Password must be at least 6 characters</div>
+
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+  </form>
+  
+</main>
+
