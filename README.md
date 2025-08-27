@@ -1,2 +1,2 @@
 # myshopproject
-Angular project for shop application
+Angular project for my shop application.
